@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:as_project/constant/colors.dart';
 
 class AdditionalInfoScreen extends StatefulWidget {
   const AdditionalInfoScreen({super.key});
@@ -46,7 +47,7 @@ class _AdditionalInfoScreenState extends State<AdditionalInfoScreen> { //화면�
         selectedGender.isNotEmpty;
 
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(245, 244, 250, 1),
+      backgroundColor: AppColors.background,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -80,14 +81,14 @@ class _AdditionalInfoScreenState extends State<AdditionalInfoScreen> { //화면�
                   borderRadius: BorderRadius.all(Radius.circular(12)),
                   borderSide: BorderSide(
                     width: 1,
-                    color: Color(0xFFE9E8F1),
+                    color: AppColors.border,
                   ),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(12)),
                   borderSide: BorderSide(
                     width: 1,
-                    color: Color(0xFFE9E8F1), // 포커스 시 보라색 테두리
+                    color: AppColors.border, // 포커스 시 보라색 테두리
                   ),
                 ),
               ),
@@ -114,14 +115,14 @@ class _AdditionalInfoScreenState extends State<AdditionalInfoScreen> { //화면�
                   borderRadius: BorderRadius.all(Radius.circular(12)),
                   borderSide: BorderSide(
                     width: 1,
-                    color: Color(0xFFE9E8F1),
+                    color: AppColors.border,
                   ),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(12)),
                   borderSide: BorderSide(
                     width: 1,
-                    color: Color(0xFFE9E8F1), // 포커스 시 보라색 테두리
+                    color: AppColors.border, // 포커스 시 보라색 테두리
                   ),
                 ),
               ),
@@ -138,7 +139,7 @@ class _AdditionalInfoScreenState extends State<AdditionalInfoScreen> { //화면�
             Container(
               height: 48,
               decoration: BoxDecoration(
-                border: Border.all(color: const Color(0xFFE9E8F1), width: 1),
+                border: Border.all(color: AppColors.border, width: 1),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Row(
@@ -152,7 +153,7 @@ class _AdditionalInfoScreenState extends State<AdditionalInfoScreen> { //화면�
                       },
                       child: Container(
                         decoration: BoxDecoration(
-                          color: selectedGender == '남성' ? const Color.fromRGBO(209, 209, 241, 1) : Colors.white,
+                          color: selectedGender == '남성' ? AppColors.main : Colors.white,
                           borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(12),
                             bottomLeft: Radius.circular(12),
@@ -180,7 +181,7 @@ class _AdditionalInfoScreenState extends State<AdditionalInfoScreen> { //화면�
                       },
                       child: Container(
                         decoration: BoxDecoration(
-                          color: selectedGender == '여성' ? const Color.fromRGBO(209, 209, 241, 1) : Colors.white,
+                          color: selectedGender == '여성' ? AppColors.main : Colors.white,
                           borderRadius: const BorderRadius.only(
                             topRight: Radius.circular(12),
                             bottomRight: Radius.circular(12),
@@ -206,10 +207,10 @@ class _AdditionalInfoScreenState extends State<AdditionalInfoScreen> { //화면�
                 onPressed: isNextEnabled ? () {} : null,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: isNextEnabled
-                      ? const Color.fromRGBO(209, 209, 244, 1)
-                      : Color.fromRGBO(202, 206, 216, 1),
+                      ? AppColors.main
+                      : AppColors.unchecked,
                   foregroundColor: Colors.white,
-                  disabledBackgroundColor: Color.fromRGBO(202, 206, 216, 1),
+                  disabledBackgroundColor: AppColors.unchecked,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(25),
                   ),

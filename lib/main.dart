@@ -1,5 +1,6 @@
+import 'package:as_project/screen/auth/Terms_Agreement_Screen.dart';
 import 'package:flutter/material.dart';
-import 'screen/auth/login_screen.dart';
+import 'screen/auth/start_screen.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
+import 'package:as_project/constant/colors.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -66,7 +67,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         selectedGender.isNotEmpty;
 
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(245, 244, 251, 1),
+      backgroundColor: AppColors.background,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -92,17 +93,18 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
-                        color: Color.fromRGBO(232, 232, 242, 1)),
+                        color: AppColors.border,
+                    ),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
-                        color: Color.fromRGBO(232, 232, 242, 1)),
+                        color: AppColors.border),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
-                        color: Color.fromRGBO(232, 232, 242, 1), width: 2),
+                        color: AppColors.border, width: 2),
                   ),
                 ),
                 onChanged: (_) => setState(() {})
@@ -121,17 +123,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
                         borderSide: BorderSide(
-                            color: Color.fromRGBO(232, 232, 242, 1)),
+                            color: AppColors.border),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
                         borderSide: BorderSide(
-                            color: Color.fromRGBO(232, 232, 242, 1)),
+                            color: AppColors.border),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
                         borderSide: BorderSide(
-                            color: Color.fromRGBO(232, 232, 242, 1), width: 2),
+                            color: AppColors.border, width: 2),
                       ),
                     ),
                     onChanged: (_) => setState(() {})
@@ -151,18 +153,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         fillColor: Colors.white,
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(8),
-                          borderSide: BorderSide(color: Color.fromRGBO(232, 232,
-                              242, 1)),
+                          borderSide: BorderSide(color: AppColors.border),
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(8),
-                          borderSide: BorderSide(color: Color.fromRGBO(232, 232,
-                              242, 1)),
+                          borderSide: BorderSide(color: AppColors.border),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(8),
-                          borderSide: BorderSide(color: Color.fromRGBO(232, 232,
-                              242, 1), width: 2),
+                          borderSide: BorderSide(color: AppColors.border, width: 2),
                         ),
                       ),
                       onChanged: (_) => setState(() {})),
@@ -183,15 +182,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
-                        borderSide: const BorderSide(color: Color(0xFFE9E8F1), width: 1),
+                        borderSide: const BorderSide(color: AppColors.border, width: 1),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
-                        borderSide: const BorderSide(color: Color(0xFFE9E8F1), width: 1),
+                        borderSide: const BorderSide(color: AppColors.border, width: 1),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
-                        borderSide: const BorderSide(color: Color(0xFFE9E8F1), width: 2),
+                        borderSide: const BorderSide(color: AppColors.border, width: 2),
                       ),
                     ),
                     icon: const Icon(Icons.keyboard_arrow_down, color: Colors.grey),
@@ -215,18 +214,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         fillColor: Colors.white,
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(8),
-                          borderSide: BorderSide(color: Color.fromRGBO(232, 232,
-                              242, 1)),
+                          borderSide: BorderSide(color: AppColors.border),
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(8),
-                          borderSide: BorderSide(color: Color.fromRGBO(232, 232,
-                              242, 1)),
+                          borderSide: BorderSide(color: AppColors.border),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(8),
-                          borderSide: BorderSide(color: Color.fromRGBO(232, 232,
-                              242, 1), width: 2),
+                          borderSide: BorderSide(color: AppColors.border, width: 2),
                         ),
                       ),
                       onChanged: (_) => setState(() {})),
@@ -270,17 +266,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
-                        color: Color.fromRGBO(232, 232, 242, 1)),
+                        color: AppColors.border),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
-                        color: Color.fromRGBO(232, 232, 242, 1)),
+                        color: AppColors.border),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
-                        color: Color.fromRGBO(232, 232, 242, 1), width: 2),
+                        color: AppColors.border, width: 2),
                   ),
                 ),
                 onChanged: (_) => setState(() {}),
@@ -297,17 +293,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
                         borderSide: BorderSide(
-                            color: Color.fromRGBO(232, 232, 242, 1)),
+                            color: AppColors.border),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
                         borderSide: BorderSide(
-                            color: Color.fromRGBO(232, 232, 242, 1)),
+                            color: AppColors.border),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
                         borderSide: BorderSide(
-                            color: Color.fromRGBO(232, 232, 242, 1), width: 2),
+                            color: AppColors.border, width: 2),
                       ),
                     )
                 )
@@ -332,8 +328,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       },
                       child: Container(
                         decoration: BoxDecoration(
-                          color: selectedGender == '남성' ? const Color.fromRGBO(
-                              209, 209, 241, 1) : Colors.white,
+                          color: selectedGender == '남성' ? AppColors.main : Colors.white,
                           borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(12),
                             bottomLeft: Radius.circular(12),
@@ -361,8 +356,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       },
                       child: Container(
                         decoration: BoxDecoration(
-                          color: selectedGender == '여성' ? const Color.fromRGBO(
-                              209, 209, 241, 1) : Colors.white,
+                          color: selectedGender == '여성' ? AppColors.main : Colors.white,
                           borderRadius: const BorderRadius.only(
                             topRight: Radius.circular(12),
                             bottomRight: Radius.circular(12),
@@ -387,10 +381,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 onPressed: isNextEnabled ? () {} : null,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: isNextEnabled
-                      ? const Color.fromRGBO(209, 209, 244, 1)
-                      : Color.fromRGBO(202, 206, 216, 1),
+                      ? AppColors.main
+                      : AppColors.unchecked,
                   foregroundColor: Colors.white,
-                  disabledBackgroundColor: Color.fromRGBO(202, 206, 216, 1),
+                  disabledBackgroundColor: AppColors.unchecked,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(25),
                   ),

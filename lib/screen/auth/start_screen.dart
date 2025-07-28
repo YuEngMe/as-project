@@ -1,6 +1,7 @@
 import 'package:as_project/screen/auth/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'additional_info_screen.dart';
+import 'package:as_project/constant/colors.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
@@ -8,7 +9,7 @@ class StartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFD1D1F4),
+      backgroundColor: AppColors.main ,
       body: SafeArea(
         child: Center(
           child: Column(
@@ -20,7 +21,7 @@ class StartScreen extends StatelessWidget {
                 height: 200,
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Color(0xFFF3F3F3),
+                  color: Colors.white,
                 ),
                 alignment: Alignment.center,
                 child: const Text(
