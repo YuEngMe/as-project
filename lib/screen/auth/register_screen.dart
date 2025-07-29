@@ -1,3 +1,4 @@
+import 'package:as_project/screen/auth/Terms_Agreement_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:as_project/constant/colors.dart';
@@ -378,7 +379,16 @@ class _RegisterScreenState extends State<RegisterScreen> {
               width: double.infinity,
               height: 50,
               child: ElevatedButton(
-                onPressed: isNextEnabled ? () {} : null,
+                onPressed: isNextEnabled
+                    ? () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const TermsAgreementScreen(),
+                          ),
+                        );
+                      }
+                    : null,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: isNextEnabled
                       ? AppColors.main

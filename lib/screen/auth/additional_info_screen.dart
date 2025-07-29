@@ -1,3 +1,4 @@
+import 'package:as_project/screen/auth/Terms_Agreement_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:as_project/constant/colors.dart';
 
@@ -204,7 +205,16 @@ class _AdditionalInfoScreenState extends State<AdditionalInfoScreen> { //화면�
               width: double.infinity,
               height: 50,
               child: ElevatedButton(
-                onPressed: isNextEnabled ? () {} : null,
+                onPressed: isNextEnabled
+                    ? () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const TermsAgreementScreen(),
+                          ),
+                        );
+                      }
+                    : null,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: isNextEnabled
                       ? AppColors.main
